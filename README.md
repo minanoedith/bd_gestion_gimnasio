@@ -16,6 +16,10 @@ Pagos: PagoID, ClienteID, FechaPago, Monto, MétodoPago.
 
 Horarios de Clases: HorarioID, ClaseID, EntrenadorID, HoraInicio,HoraFin, DíaSemana.
 
+# Modelo Entidad/ Relación (ER)
+
+https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&dark=auto#G14ly6wX3v7WSkWI_QQFotMM9VeZxAuXF-
+
 # Caso propuesto de solución BI: Inteligencia de Negocios para la Gestión de Operaciones de un Gimnasio (Base de datos Multidimencional)
 
 La directiva de un gimnasio busca implementar un sistema de Inteligencia de Negocios (BI) que permita hacer seguimiento de sus ingresos, optimizar la asignación de entrenadores y espacios así como mejorar la rentabilidad por cliente.
