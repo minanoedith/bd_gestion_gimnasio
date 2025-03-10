@@ -16,10 +16,13 @@ Pagos: PagoID, ClienteID, FechaPago, Monto, MétodoPago.
 
 Horarios de Clases: HorarioID, ClaseID, EntrenadorID, HoraInicio,HoraFin, DíaSemana.
 
-# Modelo Entidad/ Relación (ER)
+# Modelo Entidad-Relación (ER)
 
 ![imagen](https://github.com/user-attachments/assets/4723f96c-39d4-48d5-aba4-b6efd82db49d)
 
+# Modelo Lógico de la Base de datos Transaccional
+
+# Modelo Lógico del modelo dimensional de la solución BI
 
 # Caso propuesto de solución BI: Inteligencia de Negocios para la Gestión de Operaciones de un Gimnasio (Base de datos Multidimencional)
 
