@@ -1,4 +1,4 @@
-# Caso Propuesto: Modelo de Gestión de Operaciones de un Gimnasio (Base de Datos Transaccional)
+# Caso propuesto: Modelo de Gestión de Operaciones de un Gimnasio (Base de Datos Transaccional)
 
 Un gimnasio desea gestionar las operaciones con sus clientes, así como hacer seguimiento de sus ingresos y optimizar la asignación de entrenadores y espacios. Para ello, se requiere un modelo de datos que registre:
 
@@ -16,7 +16,7 @@ Pagos: PagoID, ClienteID, FechaPago, Monto, MétodoPago.
 
 Horarios de Clases: HorarioID, ClaseID, EntrenadorID, HoraInicio,HoraFin, DíaSemana.
 
-# Caso Propuesto de solución BI: Inteligencia de Negocios para la Gestión de Operaciones de un Gimnasio (Base de datos Multidimencional)
+# Caso propuesto de solución BI: Inteligencia de Negocios para la Gestión de Operaciones de un Gimnasio (Base de datos Multidimencional)
 
 La directiva de un gimnasio busca implementar un sistema de Inteligencia de Negocios (BI) que permita hacer seguimiento de sus ingresos, optimizar la asignación de entrenadores y espacios así como mejorar la rentabilidad por cliente.
 
