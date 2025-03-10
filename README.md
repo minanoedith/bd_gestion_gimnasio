@@ -18,7 +18,8 @@ Horarios de Clases: HorarioID, ClaseID, EntrenadorID, HoraInicio,HoraFin, DíaSe
 
 # Modelo Entidad/ Relación (ER)
 
-https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&dark=auto#G14ly6wX3v7WSkWI_QQFotMM9VeZxAuXF-
+![imagen](https://github.com/user-attachments/assets/4723f96c-39d4-48d5-aba4-b6efd82db49d)
+
 
 # Caso propuesto de solución BI: Inteligencia de Negocios para la Gestión de Operaciones de un Gimnasio (Base de datos Multidimencional)
 
