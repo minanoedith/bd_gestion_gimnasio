@@ -26,7 +26,7 @@ Un gimnasio desea gestionar las operaciones con sus clientes, así como hacer se
 ![imagen](https://github.com/user-attachments/assets/e1255318-f2a6-47b8-98f0-b04420521f42)
 
 
-# Modelo Lógico de la Base de datos Transaccional
+# Modelo Lógico de la base de datos transaccional
 
 ![imagen](https://github.com/user-attachments/assets/7bf6006d-8f45-49ab-b1be-86174792869f)
 
