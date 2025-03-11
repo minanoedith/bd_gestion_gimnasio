@@ -28,7 +28,7 @@ Un gimnasio desea gestionar las operaciones con sus clientes, así como hacer se
 
 # Modelo Lógico de la base de datos transaccional
 
-![imagen](https://github.com/user-attachments/assets/7bf6006d-8f45-49ab-b1be-86174792869f)
+![imagen](https://github.com/user-attachments/assets/6fb0630f-2a95-4097-b618-3980fa454aeb)
 
 
 # Caso propuesto de solución BI: Inteligencia de Negocios para la Gestión de Operaciones de un Gimnasio (Base de datos Multidimencional)
