@@ -2,24 +2,27 @@
 
 Un gimnasio desea gestionar las operaciones con sus clientes, así como hacer seguimiento de sus ingresos y optimizar la asignación de entrenadores y espacios. Para ello, se requiere un modelo de datos que registre:
 
-Clientes: ClienteID, Nombre, Apellido, FechaNacimiento, Teléfono, Correo, TipoMembresía (Mensual, Anual, Premium).
+•	Clientes: ClienteID, Nombre, Apellido, FechaNacimiento, Teléfono, Correo, IDMembresía.
 
-Clases: ClaseID, NombreClase, Categoría (Yoga, Spinning, Crossfit, etc.), Duración, CapacidadMáxima.
+•	Membresía: MembresiaID, Nombre (Mensual, Anual, Premium)
 
-Entrenadores: EntrenadorID, Nombre, Especialidad, Correo, Teléfono.
+•	Clases: ClaseID, NombreClase, IDCategoría, Duración, CapacidadMáxima.
 
-Reservaciones de Clases: ReservaciónID, ClienteID, ClaseID, FechaReservación, Asistió (Sí/No).
+•	Categoria: CategoriaID, Nombre (Yoga, Spinning, Crossfit, etc.)
 
-Entrenamientos Personales: EntrenamientoID, ClienteID, EntrenadorID, Fecha, Duración, Costo.
+•	Entrenadores: EntrenadorID, Nombre, Especialidad, Correo, Teléfono.
 
-Pagos: PagoID, ClienteID, FechaPago, Monto, MétodoPago.
+•	Reservaciones de Clases: ReservaciónID, ClienteID, HorarioID, FechaReservación, Asistió (Sí/No).
 
-Horarios de Clases: HorarioID, ClaseID, EntrenadorID, HoraInicio,HoraFin, DíaSemana.
+•	Entrenamientos Personales: EntrenamientoID, ClienteID, EntrenadorID, Fecha, Duración, Costo.
+
+•	Pagos: PagoID, ClienteID, FechaPago, Monto, MétodoPago.
+
+•	Horarios de Clases: HorarioID, ClaseID, EntrenadorID, HoraInicio, HoraFin, DíaSemana.
 
 # Modelo Entidad-Relación (ER)
 
-![imagen](https://github.com/user-attachments/assets/87aff5b5-d705-4f4b-aa4c-47cfba7e26c6)
-
+![imagen](https://github.com/user-attachments/assets/fd291a05-2f06-43ca-869f-e61b7b35bd4c)
 
 # Caso propuesto de solución BI: Inteligencia de Negocios para la Gestión de Operaciones de un Gimnasio (Base de datos Multidimencional)
 
@@ -27,10 +30,10 @@ La directiva de un gimnasio busca implementar un sistema de Inteligencia de Nego
 
 Objetivos:
 
-Analizar las tendencias de participación en clases grupales.
+•	Analizar las tendencias de participación en clases grupales.
 
-Monitorear el uso de entrenadores personales y la rentabilidad por cliente.
+•	Monitorear el uso de entrenadores personales y la rentabilidad por cliente.
 
-Evaluar ingresos mensuales por tipo de membresía y otros servicios.
+•	Evaluar ingresos mensuales por tipo de membresía y otros servicios.
 
-Detectar los horarios más populares para optimizar la asignación de entrenadores y espacios.
+•	Detectar los horarios más populares para optimizar la asignación de entrenadores y espacios.
