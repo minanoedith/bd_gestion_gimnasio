@@ -2,23 +2,23 @@
 
 Un gimnasio desea gestionar las operaciones con sus clientes, así como hacer seguimiento de sus ingresos y optimizar la asignación de entrenadores y espacios. Para ello, se requiere un modelo de datos que registre:
 
-•	Clientes: ClienteID, Nombre, Apellido, FechaNacimiento, Teléfono, Correo, IDMembresía, FechaInscripcion.
+•	Clientes: ClienteID, Nombre, Apellido, FechaNacimiento, Teléfono, Correo, IDMembresía, FechaInscripcion, Activo (Si/No).
 
 •	Membresía: MembresiaID, Nombre (Mensual, Anual, Premium), Costo
 
-•	Clases: ClaseID, NombreClase, IDCategoría, Duración, CapacidadMáxima.
+•	Clases: ClaseID, NombreClase, IDCategoría, Duración, CapacidadMáxima, Activa (Si/No).
 
 •	Categoria: CategoriaID, Nombre (Yoga, Spinning, Crossfit, etc.)
 
-•	Entrenadores: EntrenadorID, Nombre, Especialidad, Correo, Teléfono.
+•	Entrenadores: EntrenadorID, Nombre, Especialidad, Correo, Teléfono, Activo (Si/No).
 
 •	Reservaciones de Clases: ReservaciónID, ClienteID, HorarioID, FechaReservación, Asistió (Sí/No).
 
-•	Entrenamientos Personales: EntrenamientoID, ClienteID, EntrenadorID, Fecha, Duración, Costo.
+•	Entrenamientos Personales: EntrenamientoID, ClienteID, EntrenadorID, Fecha, Duración, Costo, Activo (Si/No).
 
 •	Pagos: PagoID, ClienteID, FechaPago, Monto, MétodoPago.
 
-•	Horarios de Clases: HorarioID, ClaseID, EntrenadorID, HoraInicio, HoraFin, DíaSemana.
+•	Horarios de Clases: HorarioID, ClaseID, EntrenadorID, HoraInicio, HoraFin, DíaSemana, Activo (Si/No).
 
 
 # Modelo Entidad-Relación (ER)
@@ -28,7 +28,7 @@ Un gimnasio desea gestionar las operaciones con sus clientes, así como hacer se
 
 # Modelo Lógico de la base de datos transaccional
 
-![imagen](https://github.com/user-attachments/assets/6fb0630f-2a95-4097-b618-3980fa454aeb)
+![imagen](https://github.com/user-attachments/assets/885e4c05-55db-48e2-9551-4881395fdb3b)
 
 
 # Caso propuesto de solución BI: Inteligencia de Negocios para la Gestión de Operaciones de un Gimnasio (Base de datos Multidimencional)
