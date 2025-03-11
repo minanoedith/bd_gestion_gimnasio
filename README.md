@@ -2,9 +2,9 @@
 
 Un gimnasio desea gestionar las operaciones con sus clientes, así como hacer seguimiento de sus ingresos y optimizar la asignación de entrenadores y espacios. Para ello, se requiere un modelo de datos que registre:
 
-•	Clientes: ClienteID, Nombre, Apellido, FechaNacimiento, Teléfono, Correo, IDMembresía.
+•	Clientes: ClienteID, Nombre, Apellido, FechaNacimiento, Teléfono, Correo, IDMembresía, FechaInscripcion.
 
-•	Membresía: MembresiaID, Nombre (Mensual, Anual, Premium)
+•	Membresía: MembresiaID, Nombre (Mensual, Anual, Premium), Costo
 
 •	Clases: ClaseID, NombreClase, IDCategoría, Duración, CapacidadMáxima.
 
@@ -20,9 +20,16 @@ Un gimnasio desea gestionar las operaciones con sus clientes, así como hacer se
 
 •	Horarios de Clases: HorarioID, ClaseID, EntrenadorID, HoraInicio, HoraFin, DíaSemana.
 
+
 # Modelo Entidad-Relación (ER)
 
-![imagen](https://github.com/user-attachments/assets/fd291a05-2f06-43ca-869f-e61b7b35bd4c)
+![imagen](https://github.com/user-attachments/assets/e1255318-f2a6-47b8-98f0-b04420521f42)
+
+
+# Modelo Lógico de la Base de datos Transaccional
+
+![imagen](https://github.com/user-attachments/assets/90e651fb-1399-4bdf-82bf-cab87b5bbc79)
+
 
 # Caso propuesto de solución BI: Inteligencia de Negocios para la Gestión de Operaciones de un Gimnasio (Base de datos Multidimencional)
 
