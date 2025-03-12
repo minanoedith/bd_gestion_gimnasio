@@ -47,6 +47,4 @@ Objetivos:
 
 # Modelo Lógico multidimensional de la solución BI
 
-![imagen](https://github.com/user-attachments/assets/e55845ed-5db8-432a-befa-b6919ae6f283)
-
-
+![imagen](https://github.com/user-attachments/assets/b9f45105-b3cf-4a69-be24-9cc24e43cd4e)
