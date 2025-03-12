@@ -45,7 +45,7 @@ Objetivos:
 
 •	Detectar los horarios más populares para optimizar la asignación de entrenadores y espacios.
 
-# Modelo Lógico del modelo dimensional de la solución BI
+# Modelo Lógico multidimensional de la solución BI
 
 ![imagen](https://github.com/user-attachments/assets/e55845ed-5db8-432a-befa-b6919ae6f283)
 
