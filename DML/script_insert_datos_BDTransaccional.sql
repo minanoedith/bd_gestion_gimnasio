@@ -134,7 +134,7 @@ VALUES (1, 4, '0630', 'Lunes', 10, 1),	-- Spinning Lunes 0630
 
 -- Tabla reservacion_clase
 -- select * from reservacion_clase order by 1
--- Este registro inserta 100 registros en reservacion_clase con fechas aleatorias entre 01/01/2025 y 31/03/2025
+-- Este script inserta 100 registros en reservacion_clase con fechas aleatorias entre 01/01/2025 y 31/03/2025
 DECLARE @i INT = 1;
 
 WHILE @i <= 100
@@ -156,7 +156,7 @@ END;
 -- Tablas pago y pago_detalle
 -- select * from pago order by 1
 -- select * from pago_detalle order by id_pago, id
--- Este registro inserta 20 registros de pagos por mes, para un total de 60 registros en ambas tablas
+-- Este script inserta 20 registros en las tablas pago/pago_detalle por mes, para un total de 60 registros en cada tabla
 DECLARE @fecha_inicio DATE = CONVERT(datetime, '01/01/2025');	--01/02/2025 | 01/03/2025
 DECLARE @fecha_fin DATE = CONVERT(datetime, '31/01/2025');		--28/02/2025 | 31/03/2025
 DECLARE @monto_membresia INT = 0;
