@@ -31,6 +31,11 @@ Un gimnasio desea gestionar las operaciones con sus clientes, así como hacer se
 ![imagen](https://github.com/user-attachments/assets/e0f497a8-b45f-4d30-9f71-ff6ab70feaa9)
 
 
+# Modelo Físico de la base de datos transaccional
+
+![imagen](https://github.com/user-attachments/assets/5b3938f4-230d-4d89-8817-c6133a0e5852)
+
+
 # Caso propuesto de solución BI: Inteligencia de Negocios para la Gestión de Operaciones de un Gimnasio (Base de datos Multidimencional)
 
 La directiva de un gimnasio busca implementar un sistema de Inteligencia de Negocios (BI) que permita hacer seguimiento de sus ingresos, optimizar la asignación de entrenadores y espacios así como mejorar la rentabilidad por cliente.
