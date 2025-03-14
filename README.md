@@ -31,7 +31,7 @@ Un gimnasio desea gestionar las operaciones con sus clientes, así como hacer se
 ![imagen](https://github.com/user-attachments/assets/e0f497a8-b45f-4d30-9f71-ff6ab70feaa9)
 
 
-# Modelo Físico
+# Modelo Físico de la base de datos transaccional
 
 ![imagen](https://github.com/user-attachments/assets/5b3938f4-230d-4d89-8817-c6133a0e5852)
 
