@@ -6,19 +6,19 @@ Un gimnasio desea gestionar las operaciones con sus clientes, así como hacer se
 
 •	Membresía: MembresiaID, Nombre (Mensual, Anual, Premium), Costo.
 
-•	Clases: ClaseID, IDCategoria, CodigoClase, NombreClase, Descripcion, DuracionMin, CapacidadMáxima, Activa (Si/No).
+•	Disciplina: DisciplinaID, IDCategoria, CodigoDisciplina, NombreDisciplina, Descripcion, DuracionMin, CapacidadMáxima, Activa (Si/No).
 
 •	Categoria: CategoriaID, Nombre (Yoga, Spinning, Crossfit, etc.)
 
 •	Entrenadores: EntrenadorID, TipoDocumento, NroDocumento, Nombre, Apellido, Especialidad, Correo, Teléfono, Activo (Si/No).
 
-•	Horarios de Clases: HorarioID, ClaseID, EntrenadorID, HoraInicio, DíaSemana, Costo, Activo (Si/No).
+•	Horarios de Clases: HorarioID, ClaseID, EntrenadorID, HoraInicio, HoraFin, DíaSemana, Costo, Activo (Si/No).
 
-•	Reservaciones de Clases: ReservaciónID, ClienteID, HorarioID, FechaReservación, Asistió (Sí/No).
+•	Reservaciones de Disciplina: ReservaciónID, ClienteID, HorarioID, FechaReservación, Asistió (Sí/No).
 
-•	Entrenamientos Personales: EntrenamientoID, ClienteID, EntrenadorID, FechaInicio, DuracionMeses, Costo, Activo (Si/No).
+•	Entrenamientos Personales: EntrenamientoID, ClienteID, EntrenadorID, FechaInicio, FechaFin, HoraInicio, HoraFin, Costo, Activo (Si/No).
 
-•	Pagos: PagoID, ClienteID, FechaPago, MontoPago, MontoMembresia, MontoClases, MontoEntrenamientoPersonal, MetodoPago.
+•	Pagos: PagoID, ClienteID, PeriodoInicio, PeriodoFin, FechaPago, IDMembresía, MontoPago, MontoMembresia, MontoDisciplinas, MontoEntrenamientoPersonal, MetodoPago.
 
 
 # Modelo Entidad-Relación (ER)
