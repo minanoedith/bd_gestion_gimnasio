@@ -23,7 +23,7 @@ Un gimnasio desea gestionar las operaciones con sus clientes, así como hacer se
 
 # Modelo Entidad-Relación (ER)
 
-![imagen](https://github.com/user-attachments/assets/e1255318-f2a6-47b8-98f0-b04420521f42)
+![imagen](https://github.com/user-attachments/assets/ce8c1868-b0b2-46bb-aee4-b6d4b2d17eb8)
 
 
 # Modelo Lógico de la base de datos transaccional
