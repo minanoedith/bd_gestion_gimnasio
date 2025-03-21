@@ -23,13 +23,15 @@ CREATE TABLE categoria (
 CREATE TABLE membresia (
 	id                INT IDENTITY(1,1) PRIMARY KEY,
 	nombre            VARCHAR(55)  NOT NULL UNIQUE,
-	costo             MONEY        NOT NULL
+	costo             MONEY        NOT NULL,
+	fecha_inicio      DATE         NOT NULL,
+	fecha_fin		  DATE         NOT NULL
 );
 
 -- Tabla cliente
 CREATE TABLE cliente (
 	id                INT IDENTITY(1,1) PRIMARY KEY,
-	id_membresia      INT          NOT NULL,
+	membresia_id      INT          NOT NULL,
 	tipo_documento    VARCHAR(15)  NOT NULL,
 	nro_documento     VARCHAR(15)  NOT NULL,
 	nombre            VARCHAR(55)  NOT NULL,
@@ -40,21 +42,21 @@ CREATE TABLE cliente (
 	correo            VARCHAR(30)  NOT NULL,
 	fecha_inscripcion DATE         NOT NULL,
 	activo            BIT          NOT NULL,
-	CONSTRAINT fk_cliente_membresia_id FOREIGN KEY (id_membresia) REFERENCES membresia(id),
+	CONSTRAINT fk_cliente_membresia_id FOREIGN KEY (membresia_id) REFERENCES membresia(id),
 	CONSTRAINT identificador_cliente_CONSTRAINT UNIQUE (tipo_documento, nro_documento)
 );
 
--- Tabla clase
-CREATE TABLE clase (
+-- Tabla disciplina
+CREATE TABLE disciplina (
 	id                INT IDENTITY(1,1) PRIMARY KEY,
-	id_categoria      INT          NOT NULL,
-	codigo_clase      VARCHAR(10)  NOT NULL UNIQUE,
+	categoria_id      INT          NOT NULL,
+	codigo_disciplina VARCHAR(10)  NOT NULL UNIQUE,
 	nombre            VARCHAR(55)  NOT NULL,
 	descripcion       VARCHAR(255),
 	duracion_min      INT          NOT NULL,
 	capacidad_max     INT          NOT NULL,
 	activa            BIT          NOT NULL,
-	CONSTRAINT fk_clase_categoria_id FOREIGN KEY (id_categoria) REFERENCES categoria(id)
+	CONSTRAINT fk_disciplina_categoria_id FOREIGN KEY (categoria_id) REFERENCES categoria(id)
 );
 
 -- Tabla entrenador
@@ -75,44 +77,49 @@ CREATE TABLE entrenador (
 -- Tabla entrenamiento_personal
 CREATE TABLE entrenamiento_personal (
 	id                INT IDENTITY(1,1) PRIMARY KEY,
-	id_cliente        INT          NOT NULL,
-	id_entrenador     INT          NOT NULL,
+	cliente_id        INT          NOT NULL,
+	entrenador_id     INT          NOT NULL,
 	fecha_inicio      DATE         NOT NULL,
-	duracion_meses    INT          NOT NULL,
-	costo             MONEY        NOT NULL,
+	fecha_fin         DATE         NOT NULL,
+	hora_inicio       VARCHAR(4)   NOT NULL,
+	hora_fin          VARCHAR(4)   NOT NULL,
+	costo_mensual     MONEY        NOT NULL,
 	activo            BIT          NOT NULL,
-	CONSTRAINT fk_entpersonal_cliente_id FOREIGN KEY (id_cliente) REFERENCES cliente(id),
-	CONSTRAINT fk_entpersonal_entrenador_id FOREIGN KEY (id_entrenador) REFERENCES entrenador(id)
+	CONSTRAINT fk_entpersonal_cliente_id FOREIGN KEY (cliente_id) REFERENCES cliente(id),
+	CONSTRAINT fk_entpersonal_entrenador_id FOREIGN KEY (entrenador_id) REFERENCES entrenador(id)
 );
 
--- Tabla horario_clase
-CREATE TABLE horario_clase (
+-- Tabla horario_disciplina
+CREATE TABLE horario_disciplina (
 	id                INT IDENTITY(1,1) PRIMARY KEY,
-	id_clase          INT          NOT NULL,
-	id_entrenador     INT          NOT NULL,
+	disciplina_id     INT          NOT NULL,
+	entrenador_id     INT          NOT NULL,
 	hora_inicio       VARCHAR(4)   NOT NULL,
+	hora_fin          VARCHAR(4)   NOT NULL,
 	dia_semana        VARCHAR(10)  NOT NULL,
 	costo             MONEY        NOT NULL,
 	activo            BIT          NOT NULL,
-	CONSTRAINT fk_horario_clase_clase_id FOREIGN KEY (id_clase) REFERENCES clase(id),
-	CONSTRAINT fk_horario_clase_entrenador_id FOREIGN KEY (id_entrenador) REFERENCES entrenador(id)
+	CONSTRAINT fk_hordisciplina_disciplina_id FOREIGN KEY (disciplina_id) REFERENCES disciplina(id),
+	CONSTRAINT fk_hordisciplina_entrenador_id FOREIGN KEY (entrenador_id) REFERENCES entrenador(id)
 );
 
--- Tabla reservacion_clase
-CREATE TABLE reservacion_clase (
-	id                INT IDENTITY(1,1) PRIMARY KEY,
-	id_cliente        INT          NOT NULL,
-	id_horario_clase  INT          NOT NULL,
-	fecha_reservacion DATE         NOT NULL,
-	asistio           BIT          NOT NULL,
-	CONSTRAINT fk_reservclase_cliente_id FOREIGN KEY (id_cliente) REFERENCES cliente(id),
-	CONSTRAINT fk_reservclase_horario_id FOREIGN KEY (id_horario_clase) REFERENCES horario_clase(id)
+-- Tabla reservacion_disciplina
+CREATE TABLE reservacion_disciplina (
+	id                     INT IDENTITY(1,1) PRIMARY KEY,
+	cliente_id             INT          NOT NULL,
+	horario_disciplina_id  INT          NOT NULL,
+	fecha_reservacion      DATE         NOT NULL,
+	asistio                BIT          NOT NULL,
+	CONSTRAINT fk_reservdisciplina_cliente_id FOREIGN KEY (cliente_id) REFERENCES cliente(id),
+	CONSTRAINT fk_reservdisciplina_horario_id FOREIGN KEY (horario_disciplina_id) REFERENCES horario_disciplina(id)
 );
 
 -- Tabla pago
 CREATE TABLE pago (
 	id                INT IDENTITY(1,1) PRIMARY KEY,
-	fecha             DATETIME     NOT NULL,
+	periodo_inicio    DATE         NOT NULL,
+	periodo_fin       DATE         NOT NULL,
+	fecha_pago        DATETIME     NOT NULL,
 	monto_pago        MONEY        NOT NULL,
 	metodo_pago       VARCHAR(20)  NOT NULL
 );
@@ -120,11 +127,13 @@ CREATE TABLE pago (
 -- Tabla pago_detalle
 CREATE TABLE pago_detalle (
 	id                INT IDENTITY(1,1) PRIMARY KEY,
-	id_pago           INT          NOT NULL,
-	id_cliente        INT          NOT NULL,
+	pago_id           INT          NOT NULL,
+	cliente_id        INT          NOT NULL,
+	membresia_id      INT          NOT NULL,
 	monto_membresia   MONEY        NOT NULL,
-	monto_clases      MONEY        NOT NULL,
+	monto_disciplinas MONEY        NOT NULL,
 	monto_entrenamiento_personal MONEY NOT NULL,
-	CONSTRAINT fk_pago_detalle_pago_id FOREIGN KEY (id_pago) REFERENCES pago(id),
-	CONSTRAINT fk_pago_detalle_cliente_id FOREIGN KEY (id_cliente) REFERENCES cliente(id)
+	CONSTRAINT fk_pago_detalle_pago_id FOREIGN KEY (pago_id) REFERENCES pago(id),
+	CONSTRAINT fk_pago_detalle_cliente_id FOREIGN KEY (cliente_id) REFERENCES cliente(id),
+	CONSTRAINT fk_pago_detalle_membresia_id FOREIGN KEY (membresia_id) REFERENCES membresia(id)
 );
