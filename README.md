@@ -56,3 +56,6 @@ Objetivos:
 
 
 # Modelo Físico de la base de datos multidimensional
+
+![imagen](https://github.com/user-attachments/assets/9bd9af33-36a5-4f78-aea6-008ea5aa6639)
+
