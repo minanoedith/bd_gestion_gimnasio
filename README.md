@@ -52,4 +52,7 @@ Objetivos:
 
 # Modelo Lógico multidimensional de la solución BI
 
-![imagen](https://github.com/user-attachments/assets/b9f45105-b3cf-4a69-be24-9cc24e43cd4e)
+![imagen](https://github.com/user-attachments/assets/39bb664c-1632-4ff8-acd8-f9b54b1e8779)
+
+
+# Modelo Físico de la base de datos multidimensional
