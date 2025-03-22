@@ -66,7 +66,7 @@ CREATE TABLE dim_tiempo (
 	dia               INT          NOT NULL,
 	mes               INT          NOT NULL,
 	anio              INT          NOT NULL,
-	dia_semana        VARCHAR(10)  NOT NULL
+	dia_semana        NVARCHAR(30)  NOT NULL
 );
 
 -- Tabla fact_reservacion_disciplina
