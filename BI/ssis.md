@@ -33,12 +33,15 @@ dim_entrador: 13 filas, dim_cliente: 20 filas, dim_disciplina: 11 filas, dim_hor
 
 ## Creación de Job en SQL Server
 1) General
+
 ![imagen](https://github.com/user-attachments/assets/ab476768-d63b-4fbd-a473-a4c2fe40bfa0)
 
 2) Step
+
 ![imagen](https://github.com/user-attachments/assets/fe1772a4-62a3-4cc8-ade8-51b989f59f50)
 
 3) Schedule: Todos los dias a las 17:13
+
 ![imagen](https://github.com/user-attachments/assets/b9490f8f-2059-413a-837b-0eafcf84cbc5)
 
 
