@@ -3,7 +3,7 @@ Flujo para la limpieza y poblado de 6 tablas de dimensiones y 3 tablas de hechos
 
 ![imagen](https://github.com/user-attachments/assets/492b85be-16f9-4f2a-b641-309736cf9bfc)
 
-## Poblar dimensiones
+## Poblar tablas de dimensiones
 Se poblaron 6 dimensiones con los siguientes cantidades de datos:
 dim_entrador: 13 filas, dim_cliente: 20 filas, dim_disciplina: 11 filas, dim_horario_disciplina: 26 filas, dim_tiempo: 1886 filas (desde 2020-02-01 al 2025-03-31) y dim_membresia: 4 filas
 
