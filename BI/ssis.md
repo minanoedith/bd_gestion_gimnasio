@@ -1,5 +1,6 @@
 ## Flujo general 
 Flujo para la limpieza y poblado de 6 tablas de dimensiones y 3 tablas de hechos
+
 ![imagen](https://github.com/user-attachments/assets/492b85be-16f9-4f2a-b641-309736cf9bfc)
 
 ## Poblar dimensiones
