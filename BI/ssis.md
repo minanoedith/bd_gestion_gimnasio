@@ -10,15 +10,15 @@ dim_entrador: 13 filas, dim_cliente: 20 filas, dim_disciplina: 11 filas, dim_hor
 ![imagen](https://github.com/user-attachments/assets/a0298fab-e084-4d8c-80d7-1aab8d081705)
 
 ## Poblar tabla de hechos
-1) Tabla fact_reservacion_disciplina: 252 filas
+1) Tabla de hechos fact_reservacion_disciplina: 252 filas
 
 ![imagen](https://github.com/user-attachments/assets/8eb3660f-7ea1-49b4-ada4-4079add26fd5)
 
-3) Tabla fact_entrenamiento_personal: 2958 filas
+3) Tabla de hechos fact_entrenamiento_personal: 2958 filas
 
 ![imagen](https://github.com/user-attachments/assets/450b3bfe-2619-4dcf-b562-0e19503da789)
 
-4) fact_membresia: 4352 filas
+4) Tabla de hechos fact_membresia: 4352 filas
 
 ![imagen](https://github.com/user-attachments/assets/5d4fb30b-42e7-4582-98dd-b8fcc04b5658)
 
