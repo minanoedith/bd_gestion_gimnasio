@@ -22,3 +22,5 @@ dim_entrador: 13 filas, dim_cliente: 20 filas, dim_disciplina: 11 filas, dim_hor
 
 ![imagen](https://github.com/user-attachments/assets/5d4fb30b-42e7-4582-98dd-b8fcc04b5658)
 
+## Proyecto implementado y vinculado a un Job que ejecuta automáticamente
+
