@@ -119,7 +119,7 @@ CREATE TABLE pago (
 	id                INT IDENTITY(1,1) PRIMARY KEY,
 	periodo_inicio    DATE         NOT NULL,
 	periodo_fin       DATE         NOT NULL,
-	fecha_pago        DATETIME     NOT NULL,
+	fecha_pago        DATE         NOT NULL,
 	monto_pago        MONEY        NOT NULL,
 	metodo_pago       VARCHAR(20)  NOT NULL
 );

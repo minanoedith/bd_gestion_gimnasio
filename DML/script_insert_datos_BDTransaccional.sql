@@ -181,7 +181,7 @@ DECLARE @i INT = 1;
 DECLARE @pago_id INT = 1;
 
 -- While de Membresia
-SET @membresia_id INT = 1; 
+SET @membresia_id = 1; 
 
 WHILE @membresia_id<=4
 BEGIN
