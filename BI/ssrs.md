@@ -28,10 +28,9 @@
 
 ![imagen](https://github.com/user-attachments/assets/cff27cd1-093d-4f78-bd39-a5b2ec1e4836)
 
-## Vista de reportes en el servidor de informes
-
 ![imagen](https://github.com/user-attachments/assets/a399da2c-b59b-4cbb-8862-37fe1a105e84)
 
+## Vista de reportes en el servidor de informes
 1) Reporte de "Reservaciones de Disciplinas por Año": Reporte tipo matriz
 
 ![imagen](https://github.com/user-attachments/assets/e62fffe9-065e-4bfa-a581-8f0941a77303)
