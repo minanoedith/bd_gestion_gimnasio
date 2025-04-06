@@ -7,7 +7,7 @@
 
 ![imagen](https://github.com/user-attachments/assets/e0273c1f-f63f-4a7a-9d8c-770038592ef2)
 
-3) Reporte de "Membresías Facturadas por Año: Reporte tabular y con parámetro de año
+3) Reporte de "Membresías Facturadas por Año": Reporte tabular y con parámetro de año
 
 ![imagen](https://github.com/user-attachments/assets/dd3e97ef-bc98-4b9d-9a73-dd2a29eed799)
 
@@ -20,7 +20,7 @@
 
 ![imagen](https://github.com/user-attachments/assets/472102ec-476e-489f-92f1-9f17b5358ef3)
 
-3) Reporte de "Membresías Facturadas por Año: Reporte tabular y con parámetro de año
+3) Reporte de "Membresías Facturadas por Año": Reporte tabular y con parámetro de año
 
 ![imagen](https://github.com/user-attachments/assets/6ab0555f-5b91-4e4d-a1e3-4cf39352bb66)
 
@@ -39,6 +39,6 @@
 
 ![imagen](https://github.com/user-attachments/assets/4a57ee8e-b1ec-4348-9fa7-b4c76a839188)
 
-3) Reporte de "Membresías Facturadas por Año: Reporte tabular y con parámetro de año
+3) Reporte de "Membresías Facturadas por Año": Reporte tabular y con parámetro de año
 
 ![imagen](https://github.com/user-attachments/assets/48e4e1e7-1cbd-42bc-a28c-cd07dde05866)
