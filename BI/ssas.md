@@ -38,8 +38,4 @@ Membresias facturadas a clientes durante los años 2024 y 2025.
 
 Las medidas que se muestran corresponden a la cantidad de membresías facturadas y los ingresos que generaron.
 
-![imagen](https://github.com/user-attachments/assets/8e7fed11-1efc-4484-bd97-9c04ab19ae92)
-
-
-
-
+![imagen](https://github.com/user-attachments/assets/35247523-1cee-4e6d-84ec-c21c13fefb56)
