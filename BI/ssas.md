@@ -17,7 +17,8 @@
 
 ## Vista del Explorador del Cubo
 1) Cubo ReservacionDisciplina
-Reservaciones de clases hechas por clientes de genero Femenino de Lunes a Viernes durante el año 2024  
+
+Reservaciones de clases hechas por clientes de genero Femenino de Lunes a Viernes durante el año 2024. Las medidas que se muestran corresponden a cantidad de reservaciones, duración en minutos de las clases y los ingresos que generaron 
 
 ![imagen](https://github.com/user-attachments/assets/b03a700c-0556-42d7-8ae0-07841e7eb5b1)
 
