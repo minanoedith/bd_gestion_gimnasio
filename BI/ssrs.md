@@ -11,7 +11,7 @@
 
 ![imagen](https://github.com/user-attachments/assets/dd3e97ef-bc98-4b9d-9a73-dd2a29eed799)
 
-## Vista previa del proyecto
+## Vista previa del reporte
 1) Reporte de "Reservaciones de Disciplinas por Año": Reporte tipo matriz
 
 ![imagen](https://github.com/user-attachments/assets/9828de09-f23b-4adc-960a-b69dedfe5005)
