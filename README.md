@@ -10,11 +10,11 @@ Un gimnasio desea gestionar las operaciones con sus clientes, así como hacer se
 
 •	Categoria: CategoriaID, Nombre (Yoga, Spinning, Crossfit, etc.)
 
-•	Entrenadores: EntrenadorID, TipoDocumento, NroDocumento, Nombre, Apellido, Especialidad, Correo, Teléfono, Activo (Si/No).
-
-•	Horarios de Clases: HorarioID, ClaseID, EntrenadorID, HoraInicio, HoraFin, DíaSemana, Costo, Activo (Si/No).
+•	Horarios de Disciplinas: HorarioID, ClaseID, EntrenadorID, HoraInicio, HoraFin, DíaSemana, Costo, Activo (Si/No).
 
 •	Reservaciones de Disciplina: ReservaciónID, ClienteID, HorarioID, FechaReservación, Asistió (Sí/No).
+
+•	Entrenadores: EntrenadorID, TipoDocumento, NroDocumento, Nombre, Apellido, Especialidad, Correo, Teléfono, Activo (Si/No).
 
 •	Entrenamientos Personales: EntrenamientoID, ClienteID, EntrenadorID, FechaInicio, FechaFin, HoraInicio, HoraFin, Costo, Activo (Si/No).
 
